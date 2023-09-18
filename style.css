@@ -1,0 +1,333 @@
+/* 
+    Document   : style
+    Created on : 10 mai 2011, 18:15:42
+    Author     : piovan
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+/* 
+   TODO customize this sample style
+   Syntax recommendation http://www.w3.org/TR/REC-CSS2/
+*/
+
+root { 
+    display: block;
+}
+
+body
+{
+    /*background-color:#398E08;*/
+    /*background-image:url(images/tapis.jpg);*/
+    
+}
+
+#logo
+{
+    position:relative;
+    left:-400px;
+    font-style:italic;
+    text-decoration:underline;
+    color:white;
+    float:left;
+    font-size:150px;
+    /*text-shadow:0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #870079, 0 0 70px #870079, 0 0 80px #870079, 0 0 100px #870079, 0 0 150px #870079;*/
+    -moz-transform:rotate(-15deg);
+    -webkit-transform:rotate(-15deg);
+}
+.neon
+{
+    text-shadow:0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #870079, 0 0 70px #870079, 0 0 80px #870079, 0 0 100px #870079, 0 0 150px #870079;
+
+}
+.fondrose
+{
+    background:pink;
+}
+
+#slider
+{
+    position:absolute;
+    
+    display:none;
+    background:black;
+    top:50%;
+    left:15%;
+
+}
+
+#creation
+{
+    z-index:10;
+}
+
+#button
+{
+    width:150px;
+    display:none;
+
+    
+}
+
+#button button
+{
+    -moz-border-radius:10px;
+    -webkit-border-radius:10px;
+    background-color:teal;
+    font-size:30px;
+    width:100%;
+    height:50px;
+}
+
+
+#button img
+{
+    width:100px;
+    
+}
+
+#start
+{
+    position:absolute;    
+    top:5%;
+    left:25%;
+    z-index:20;
+}
+#pause
+{
+    position:absolute;    
+    left:15%;
+    top:20%;
+    z-index:20;
+}
+#next
+{
+    position:absolute;    
+    left:10%;
+    top:35%;
+    z-index:20;
+}
+
+#pinup
+{
+    position: absolute;
+    right: 0% ;
+    top: 0%;
+   z-index:30;
+   
+}
+
+#chrono
+{
+    position:absolute;
+    top:15%;
+    left:20%;
+    font-size:400px;
+    z-index:30;
+    
+}
+#field
+{
+   /* font-size:150px;*/
+    text-shadow: 0 0 20px #fefcc9, 10px -10px 30px #feec85, -20px -20px 40px #ffae34, 20px -40px 50px #ec760c, -20px -60px 60px #cd4606, 0 -80px 70px #973716, 10px -90px 80px #451b0e;
+}
+
+#blindes
+{
+    position:absolute;
+    bottom:10%;
+    right:10%;
+    /*font-size:150px;*/
+-moz-transform:rotate(-15deg);
+-webkit-transform:rotate(-15deg);
+z-index:-20;
+}
+
+
+#ante
+{
+    position:absolute;
+    bottom:70%;
+    right:2%;
+    
+    -moz-transform:rotate(7deg);
+    -webkit-transform:rotate(7deg);
+    
+    font-size:75px;    
+    text-shadow:0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #009900, 0 0 70px #009900, 0 0 80px #009900, 0 0 100px #009900;
+    z-index:40;
+}
+
+#blindes fieldset
+{
+    -moz-border-radius:30px;
+    -webkit-border-radius:30px;
+height:140px;
+font-size:150px;
+/*background: url("images/plaque.png") repeat;*/
+
+}
+#blindes legend
+{
+    font-size:75px;
+   /* font-family: cursive;*/
+}
+
+#chips
+{
+
+    position:absolute;
+    right:2000px;
+    top:1000px;
+    -webkit-opacity:0;
+    z-index:-10;
+   /* float:right;
+    
+   -webkit-opacity:0.8;
+    z-index:-10;*/
+}
+
+#blind
+{
+    width:50%;
+    margin-left:25%;
+    margin-right:25%;
+}
+
+
+
+#blind th
+{
+    width:200px;
+}
+#blind td
+{
+    
+    
+}
+
+div#blind table
+{
+    display:none;
+}
+
+#tableaublind
+{
+    
+    background-color:grey;
+    opacity:0.8;
+    font-family: cursive;
+    font-weight: bold;
+}
+
+#tableaublind input
+{
+    width:98%;
+    height:100%;
+    font-family: cursive;
+    font-weight: bold;
+    font-size: 100%;
+    
+}
+
+
+#raspail
+{
+    left:40%;
+    width:20%;
+    background-color:white;
+    /*position:absolute;*/
+    position: fixed;
+    bottom:1px;
+    font-weight:bold;
+    -moz-border-radius:10px;
+    -webkit-border-radius:10px;
+    text-align:center;
+    
+}
+
+#menu img,#blind img
+{
+    width:100px;
+}
+
+
+
+.chip
+{
+    position:relative;
+    cursor:pointer;
+    
+}
+.inchip
+{
+    position:relative;
+margin-left: -100px;
+margin-top:-50px;
+top:-50px;
+font-weight:bold;
+-moz-transform:rotate(-15deg);
+-webkit-transform:rotate(-15deg);
+text-shadow:0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #870079, 0 0 70px #870079;
+font-family: cursive;
+
+}
+
+#cup
+{
+    /*position:absolute;*/
+    position: fixed;
+    bottom:-10px;
+    left:-90px;
+}
+#btnchanger
+{
+ position: fixed;
+ bottom:30px;
+ left:200px;
+ font-family: cursive;
+}
+#chkaleat
+{
+    color: white;
+ position: fixed;
+ bottom:12px;
+ left:220px;
+ font-family: cursive;
+}
+
+
+#lien
+{
+    position: absolute;
+    top: 200px;
+    background-color: black;
+    -webkit-opacity:0.8;
+    z-index: 3;
+    width: 160px;
+   
+    text-align: center;
+}
+
+#lien img{
+    position: relative;
+}
+
+#lien img:hover
+{
+    cursor: pointer;
+}
+
+
+#titre_liens
+{
+    color: white;
+    text-shadow:0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #870079, 0 0 70px #870079;
+    position: relative;
+    -moz-transform:rotate(-90deg);
+    -webkit-transform:rotate(-90deg);
+    /*margin-left: 135px;*/
+    right: -70px;
+    /*left: 100px;*/
+    top: 110px;
+}

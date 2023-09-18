@@ -1,0 +1,112 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+"http://www.w3.org/TR/html4/strict.dtd">
+
+<!--<!DOCTYPE html>-->
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="stylesheet" href="style.css" type="text/css"/>
+        <link rel="icon" type="image/png" href="images/favicon.png" />
+    <script type="text/javascript" src="compteur.js"></script>
+    <script type="text/javascript" src="jquery.js"></script>
+    <script type="text/javascript" src="jqueryui/development-bundle/ui/jquery-ui-1.8.13.custom.js" ></script>
+    <link rel="stylesheet" href="jqueryui/development-bundle/themes/ui-lightness/jquery.ui.all.css" type="text/css"/>
+        <title>Poker Raspail</title>
+    </head>
+    <body onload="proposer()">
+              
+       
+        
+        <div class="neon" id="logo">
+            Timer
+        </div>
+
+        
+<!--        <div id="lien" onmouseover="montreLiens()">
+            <p id="titre_liens">Liens</p>
+            <a href="http://www.poker-production.com" target="blank" ><img src="images/Liens/pokerproduction.jpg" alt="poker production" width="120px"/></a><br />
+            <a href="http://www.pokeo.fr" target="blank" ><img src="images/Liens/Pokeo.gif" alt="pokeo" width="120px"/></a><br />
+            <a href="http://www.pokershop.fr/" target="blank" ><img src="images/Liens/pokershop.jpg" alt="pokershop" width="120px"/></a><br />                                   
+        </div>
+        -->
+                
+        
+        <div id="creation">
+            <div ><img id="chips" src="images/chips.png" alt="img_chips"/></div>
+            <div id="blind">
+                <span class="chip" onclick="ajouterblind()"><img   src="images/chip_bleu.png" alt="ajouter_blind" /><span class="inchip">ajouter blind</span></span>&nbsp;&nbsp;&nbsp;&nbsp;
+                <span class="chip" onclick="retirerblind()"><img  src="images/chip_vert.png" alt="retirer_blind" /><span class="inchip">retirer blind</span></span>
+                <span style="float:right;" class="chip" onclick="construirepartie()"><img  src="images/chip_rouge.png" alt="lancer" /><span class="inchip">lancer partie</span></span>
+                <!--<input type="button" value="ajouter blinde" onclick="ajouterblind()"/>
+                <input type="button" value="retirer blinde" onclick="retirerblind()"/>-->
+                <table  border="1">
+                    <tbody id="tableaublind">
+                        <tr>
+                            <th>
+                                Temps en min
+                            </th>
+                            <th>
+                                Petite blinde
+                            </th>
+                            <th>
+                                Grosse blinde
+                            </th>
+                            <th>
+                                Ante
+                            </th>
+                        </tr>
+
+                    </tbody>
+                </table>
+                
+                
+
+            </div>
+            
+        </div>
+
+        <div id="partie">
+            <div id="button">
+
+                <p class="chip" id="start" ><img onmouseover="grossit(this)" onmouseout="retrecit(this)" onmousedown="push(this)" onmouseup="up(this)" onclick="start()" src="images/chip_play.png" alt="lancer" /></p>
+                <p class="chip" id="pause" ><img onmouseover="grossit(this)" onmouseout="retrecit(this)" onmousedown="push(this)" onmouseup="up(this)" onclick="pause()" src="images/chip_pause.png" alt="stop" /></p>
+                <p class="chip" id="next" ><img onmouseover="grossit(this)" onmouseout="retrecit(this)" onmousedown="push(this)" onmouseup="up(this)" onclick="augmenteblind()" src="images/chip_next.png" alt="next" /></p>
+                <!--<button id="pause" type="button" value="pause" onclick="pause()"/>pause
+                <br />
+                <br />
+                <button id="start"  type="button" value="start" onclick="start()"/>start-->
+            </div>
+            
+            <div id="chrono"></div>
+            <br />
+            <div id="blindes">
+                <fieldset>
+                    <legend>Blinds</legend>
+                    <span id="field"></span>
+                </fieldset>
+                <div id="ante"></div>
+            </div>
+            
+            
+            
+            <div id="tableaudeblind" ></div>
+
+             <div id="slider"></div>
+             
+
+        </div>
+        <div id="son"></div>
+        
+        
+        <div id="cup">
+            <img src="images/racetrack.png" alt="cup" width="500px"/>
+        </div>
+        <input id='btnchanger' type="button" value="changer fond" onclick="fondEcranAleatoire()" />
+        <div id="chkaleat" ><span >fond aléatoire&nbsp;</span><input  type="checkbox" name="aleatoire" value="ok" checked onchange="setFondAleatoire(this)"/></div>
+        <div id="raspail">Production Raspail</div>
+        
+        
+    </body>
+</html>
+
+
